@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$first-color: #04121d;
+$second-color: #2c394b;
+$third-color: #334756;
+$accent-color: #ff4c29;
+
+* {
+  color: white;
+}
+
+body {
+  background-color: $first-color;
+  font-family: "Open Sans", sans-serif;
+}
+.active {
+  background-color: $second-color;
+}
+
+.sidebar {
+  background-color: $third-color;
+
+}
+.active{
+  background-color: #ff4c29;
+}
