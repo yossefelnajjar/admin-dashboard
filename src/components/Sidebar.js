@@ -17,21 +17,15 @@ import {
 
 const Sidebar = () => {
   const btns = document.querySelectorAll("#btn-ul li a");
-  if (localStorage.getItem("btn")) {
-    btns.forEach((btn) => {
-      if (btn.href === localStorage.getItem("btn")) {
-        btn.classList.add("active");
-      }
-    });
-  } 
-
   btns.forEach((btn) => {
+    if (btn.href === window.location.href) {
+      btn.classList.add("active");
+    }
     btn.addEventListener("click", () => {
       btns.forEach((btn) => {
         btn.classList.remove("active");
       });
       btn.classList.add("active");
-      localStorage.setItem("btn", btn.href);
     });
   });
 

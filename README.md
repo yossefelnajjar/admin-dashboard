@@ -28,7 +28,6 @@ Admin Dashboard Using React.js, Tailwind
 - Semantic HTML5 markup
 - CSS flexbox
 - CSS grid
-- Storing data permanently using localStorage
 - Responsive design
 - React component methodology
 - Advanced files structure
