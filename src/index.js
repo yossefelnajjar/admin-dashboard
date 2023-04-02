@@ -12,7 +12,7 @@ import Courses from "./pages/Courses";
 import Friends from "./pages/Friends";
 import Files from "./pages/Files";
 import Plans from "./pages/Plans";
-
+import NotFound from "./pages/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +21,7 @@ root.render(
       <Sidebar />
       <Nav />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/settings" element={<Settings />} />

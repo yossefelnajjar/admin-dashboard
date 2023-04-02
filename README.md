@@ -31,3 +31,7 @@ Admin Dashboard Using React.js, Tailwind
 - Responsive design
 - React component methodology
 - Advanced files structure
+
+# fix-Bugs
+
+-NotFound page
