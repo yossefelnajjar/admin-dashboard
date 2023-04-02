@@ -10,11 +10,42 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.active {
+::-moz-selection {
+  background-color: #ff4c29;
+  color: #04121d;
+}
+
+::selection {
+  background-color: #ff4c29;
+  color: #04121d;
+}
+
+.sidebar,
+nav {
   background-color: #2c394b;
 }
 
-.sidebar {
+h1::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  border-radius: 8px;
+  left: 0;
+  width: 100%;
+  height: 5px;
   background-color: #334756;
 }
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  border-radius: 8px;
+  left: 0;
+  width: 80%;
+  height: 5px;
+  background-color: #ff4c29;
+}
 
+.active {
+  background-color: rgb(30, 41, 59);
+}/*# sourceMappingURL=index.css.map */

@@ -16,9 +16,28 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
+  const btns = document.querySelectorAll("#btn-ul li a");
+  if (localStorage.getItem("btn")) {
+    btns.forEach((btn) => {
+      if (btn.href === localStorage.getItem("btn")) {
+        btn.classList.add("active");
+      }
+    });
+  } 
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      btn.classList.add("active");
+      localStorage.setItem("btn", btn.href);
+    });
+  });
+
   return (
     <>
-      <div className="sidebar p-3 fixed h-screen w-40 z-50 sm:w-fit md:w-fit sm:p-1 md:p-1 ">
+      <div className="sidebar p-3 fixed h-screen w-40 z-50 sm:w-fit md:w-fit sm:p-1 md:p-1 shadow-2xl">
         <h3 className="uppercase mt-0 text-center sm:text-xs md:text-xs sm:my-1 md:my-2">
           yossef
         </h3>
@@ -39,7 +58,7 @@ const Sidebar = () => {
           <SidebarBtn name="Profile" link="/profile">
             <FontAwesomeIcon icon={faUser} />
           </SidebarBtn>
-          <SidebarBtn name="Projects" link="/Projects">
+          <SidebarBtn name="Projects" link="/projects">
             <FontAwesomeIcon icon={faDiagramProject} />
           </SidebarBtn>
           <SidebarBtn name="Courses" link="/courses">
