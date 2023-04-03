@@ -3,6 +3,11 @@
 @tailwind utilities;
 * {
   color: white;
+  letter-spacing: 0.01cm;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,4 +53,25 @@ h1::after {
 
 .active {
   background-color: rgb(30, 41, 59);
+}
+
+table {
+  min-width: 1000px;
+}
+table thead tr {
+  background-color: #26263b;
+  font-size: 16px;
+  font-weight: bold;
+}
+table tbody tr img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+table tbody tr img:not(:first-child) {
+  margin-left: -10px;
+}
+table td {
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  padding: 10px;
 }/*# sourceMappingURL=index.css.map */

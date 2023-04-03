@@ -9,6 +9,11 @@ $accent-color: #ff4c29;
 
 * {
   color: white;
+  letter-spacing: 0.01cm;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,4 +55,30 @@ h1 {
 
 .active {
   background-color: rgb(30 41 59);
+}
+
+table {
+  min-width: 1000px;
+
+  thead tr {
+    background-color: #26263b;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  tbody tr {
+    img {
+      width: 30px;
+      border: 1px solid white;
+      border-radius: 50%;
+      &:not(:first-child) {
+        margin-left: -10px;
+      }
+    }
+  }
+
+  td {
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    padding: 10px;
+  }
 }

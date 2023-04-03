@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 import {
   faChartBar,
   faCircle,
@@ -16,23 +17,27 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
-  const btns = document.querySelectorAll("#btn-ul li a");
-  btns.forEach((btn) => {
-    if (btn.href === window.location.href) {
-      btn.classList.add("active");
-    }
-    btn.addEventListener("click", () => {
-      btns.forEach((btn) => {
-        btn.classList.remove("active");
+  useEffect(() => {
+    const btns = document.querySelectorAll("#btn-ul li a");
+
+    btns.forEach((btn) => {
+      if (btn.href === window.location.href) {
+        btn.classList.add("active");
+      }
+
+      btn.addEventListener("click", () => {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        btn.classList.add("active");
       });
-      btn.classList.add("active");
     });
-  });
+  }, []);
 
   return (
     <>
       <div className="sidebar p-3 fixed h-screen w-40 z-50 sm:w-fit md:w-fit sm:p-1 md:p-1 shadow-2xl">
-        <h3 className="uppercase mt-0 text-center sm:text-xs md:text-xs sm:my-1 md:my-2">
+        <h3 className="uppercase mt-0 text-center sm:text-xs md:text-xs sm:my-2 md:my-2 cursor-default ">
           yossef
         </h3>
         <div className="mb-2 text-center -mt-1 text-sm sm:hidden md:hidden ">
