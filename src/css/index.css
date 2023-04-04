@@ -63,15 +63,22 @@ table thead tr {
   font-size: 16px;
   font-weight: bold;
 }
-table tbody tr img {
+table td {
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  padding: 10px;
+}
+
+.projects-team,
+tr img {
   width: 30px;
   border: 1px solid white;
   border-radius: 50%;
 }
-table tbody tr img:not(:first-child) {
+.projects-team:not(:first-child),
+tr img:not(:first-child) {
   margin-left: -10px;
 }
-table td {
-  border: 1px solid rgba(128, 128, 128, 0.322);
-  padding: 10px;
+
+.projects-team {
+  width: 40px;
 }/*# sourceMappingURL=index.css.map */

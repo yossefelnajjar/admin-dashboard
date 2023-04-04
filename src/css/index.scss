@@ -66,19 +66,21 @@ table {
     font-weight: bold;
   }
 
-  tbody tr {
-    img {
-      width: 30px;
-      border: 1px solid white;
-      border-radius: 50%;
-      &:not(:first-child) {
-        margin-left: -10px;
-      }
-    }
-  }
-
   td {
     border: 1px solid rgba(128, 128, 128, 0.322);
     padding: 10px;
   }
+}
+
+.projects-team,
+tr img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  &:not(:first-child) {
+    margin-left: -10px;
+  }
+}
+.projects-team{
+  width: 40px;
 }
