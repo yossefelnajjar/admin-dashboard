@@ -29,9 +29,6 @@ Admin Dashboard Using React.js, Tailwind
 - CSS flexbox
 - CSS grid
 - Responsive design
+- 404 NotFound page
 - React component methodology
 - Advanced files structure
-
-# fix-Bugs
-
--NotFound page

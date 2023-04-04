@@ -29,6 +29,7 @@ import Tasks from "../components/dashboard/Tasks";
 import Tickets from "../components/dashboard/Tickets";
 import Reminders from "../components/dashboard/Reminders";
 import Table from "../components/dashboard/Table";
+import ProgressBar from "../components/ProgressBar";
 
 const Dashboard = () => {
   return (
@@ -60,18 +61,18 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
       <div className="rounded-lg p-4 bg-slate-800">
         <Heading h2="Quick Draft" p="Write A Draft For Your Ideas" />
         <form>
           <input
             type="text"
-            className="block mb-5 w-full p-2 border-none bg-slate-200 outline-none text-slate-900 placeholder:text-xs rounded-md"
+            className="block mb-5 w-full p-2 border-none bg-slate-200 outline-none text-slate-900 placeholder:text-xs rounded-md focus:placeholder:opacity-0"
             placeholder="Title"
           />
           <textarea
-            className="block mb-5 w-full resize-none h-48 p-2 border-none bg-slate-200 outline-none text-slate-900 placeholder:text-xs rounded-md"
             placeholder="Your Thoughts"
-          />
+            class="block mb-5 rounded-md p-2 w-full mt-3 resize-none h-48 border-none bg-slate-200 outline-none text-slate-900 placeholder:text-xs focus:placeholder:opacity-0"></textarea>
           <div class="flex justify-end">
             <button className="visit block text-sm bg-slate-900 py-1 px-2 rounded-2xl hover:bg-slate-950 transition-all text-orange-500 w-fit btn-shape">
               Save
@@ -79,6 +80,7 @@ const Dashboard = () => {
           </div>
         </form>
       </div>
+
       <div className="rounded-lg p-4 bg-slate-800">
         <Heading h2="Yearly Targets" p="Targets Of The Year" />
 
@@ -90,11 +92,12 @@ const Dashboard = () => {
           <div className="flex-1">
             <span className="text-sm text-gray-400">Money</span>
             <div className="mb-2 font-bold text-gray-300">$200.000</div>
-            <div className="progress h-1 relative rounded-lg bg-sky-900">
-              <span
-                className="bg-sky-600 rounded-lg absolute top-0 left-0 h-full"
-                style={{ width: "80%" }}></span>
-            </div>
+            <ProgressBar
+              innerBg="bg-blue-900"
+              outerBg="bg-blue-500"
+              outerW="w-full"
+              innerW="w-2/3"
+            />
           </div>
         </div>
 
@@ -106,11 +109,12 @@ const Dashboard = () => {
           <div className="flex-1">
             <span className="text-sm text-gray-400">Projects</span>
             <div className="mb-2 font-bold text-gray-300">26</div>
-            <div className="progress h-1 relative rounded-lg bg-orange-900">
-              <span
-                className="bg-orange-600 rounded-lg absolute top-0 left-0 h-full"
-                style={{ width: "85%" }}></span>
-            </div>
+            <ProgressBar
+              innerBg="bg-orange-900"
+              outerBg="bg-orange-500"
+              outerW="w-full"
+              innerW="w-2/4"
+            />
           </div>
         </div>
 
@@ -122,14 +126,16 @@ const Dashboard = () => {
           <div className="flex-1">
             <span className="text-sm text-gray-400">Team</span>
             <div className="mb-2 font-bold text-gray-300">10</div>
-            <div className="progress h-1 relative rounded-lg bg-green-900">
-              <span
-                className="bg-green-600 rounded-lg absolute top-0 left-0 h-full"
-                style={{ width: "60%" }}></span>
-            </div>
+            <ProgressBar
+              innerBg="bg-green-900"
+              outerBg="bg-green-500"
+              outerW="w-full"
+              innerW="w-5/6"
+            />
           </div>
         </div>
       </div>
+
       <div className="rounded-lg p-4 bg-slate-800">
         <Heading h2="Tickets Statistics" p="Everything About Support Tickets" />
 
