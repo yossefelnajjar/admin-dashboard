@@ -8,8 +8,8 @@ import ActivityRow from './../components/profile/ActivityRow';
 
 const Profile = () => {
   return (
-    <Wrapper head="Profile">
-      <div className="rounded-lg p-4 col-span-3 sm:col-span-1 md:col-span-1 bg-slate-800">
+    <Wrapper head="Profile" modGrid="!grid-cols-5">
+      <div className="rounded-lg p-4 col-span-5  bg-slate-800">
         <div className="profile-info flex sm:flex-col md:flex-col lg:flex-col ">
           <div className="profile-info-logo flex items-center flex-col border-r pr-4 m-4 lg:mb-4 lg:p-0 lg:m-0 lg:border-r-0">
             <img
@@ -68,9 +68,9 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="rounded-lg p-4 bg-slate-800">
+      <div className="rounded-lg p-4 bg-slate-800 lg:col-span-5">
         <Heading h2="My Skills" p="Complete Skills List" />
-        <div className="border-y border-slate-400  flex flex-wrap justify-center items-center flex-col">
+        <div className="border-y border-slate-400  flex flex-wrap justify-center items-center flex-col ">
           <DashboardBtn content="HTML" bgColor="ml-4 px-2  mt-3" />
           <DashboardBtn content="CSS" bgColor="ml-4 px-2  mt-3" />
           <DashboardBtn content="JavaScript" bgColor="ml-4 px-2  mt-3" />
@@ -82,7 +82,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="rounded-lg p-4 col-span-2 sm:col-span-1 lg:col-span-1 bg-slate-800">
+      <div className="rounded-lg p-4 col-span-4  lg:col-span-5 bg-slate-800">
         <Heading
           h2="Latest Activities"
           p="Latest Activities Done By The User"

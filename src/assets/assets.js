@@ -12,6 +12,7 @@ import pdf from "./../assets/pdf.svg";
 import avi from "./../assets/avi.svg";
 import psd from "./../assets/psd.svg";
 import eps from "./../assets/eps.svg";
+import course from "./../assets/course-01.jpg";
 
 export {
   team1,
@@ -28,4 +29,5 @@ export {
   activity1,
   activity2,
   activity3,
+  course,
 };

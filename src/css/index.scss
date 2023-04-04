@@ -81,6 +81,23 @@ tr img {
     margin-left: -10px;
   }
 }
-.projects-team{
+.projects-team {
   width: 40px;
+}
+.course-btn {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 200%;
+    height: 1px;
+    background-color: #acacac;
+  }
+  &::before {
+    right: -200%;
+  }
+  &::after {
+    left: -200%;
+  }
 }

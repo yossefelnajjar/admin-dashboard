@@ -23,11 +23,11 @@ const ProjectsBox = ({
         <span className="text-slate-300">{date}</span>
       </div>
       <div className="">{children}</div>
-      <div className="py-3 border-y border-slate-400 my-2 flex justify-end">
-        <DashboardBtn content={tech1} bgColor="mr-2" />
+      <div className="py-3 border-y border-slate-400 my-2 flex justify-end xl:flex-wrap">
+        <DashboardBtn content={tech1} bgColor="mr-2 " />
         <DashboardBtn content={tech2} bgColor="mr-2" />
         <DashboardBtn content={tech3} bgColor="mr-2" />
-        <DashboardBtn content={tech4} />
+        <DashboardBtn content={tech4} bgColor="xl:mt-2"/>
       </div>
       <div className="flex justify-center items-center">
         <ProgressBar

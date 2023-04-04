@@ -81,4 +81,19 @@ tr img:not(:first-child) {
 
 .projects-team {
   width: 40px;
+}
+
+.course-btn::before, .course-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 200%;
+  height: 1px;
+  background-color: #acacac;
+}
+.course-btn::before {
+  right: -200%;
+}
+.course-btn::after {
+  left: -200%;
 }/*# sourceMappingURL=index.css.map */
