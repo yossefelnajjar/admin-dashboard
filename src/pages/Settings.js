@@ -7,7 +7,6 @@ const Settings = () => {
       <div className="rounded-lg p-4 bg-slate-800">test</div>
       <div className="rounded-lg p-4 bg-slate-800">test</div>
       <div className="rounded-lg p-4 bg-slate-800">test</div>
-      <div className="rounded-lg p-4 bg-slate-800">test</div>
     </Wrapper>
   );
 };
