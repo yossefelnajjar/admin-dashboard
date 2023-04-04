@@ -30,7 +30,7 @@ const Projects = () => {
     );
   }
 
-  return <Wrapper head="dashboard">{boxes}</Wrapper>;
+  return <Wrapper head="Projects">{boxes}</Wrapper>;
 };
 
 export default Projects;
