@@ -10,7 +10,7 @@ Admin Dashboard Using React.js, Tailwind
 
 ### Links
 
-- [Live Site URL](https://yossef-hoobank.netlify.app/)
+- [Live Site URL](https://yossefdashboard.netlify.app/)
 
 ### Built with
 
