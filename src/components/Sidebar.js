@@ -5,7 +5,6 @@ import {
   faCircle,
   faCircleUser,
   faCreditCard,
-  faFile,
   faUser,
 } from "@fortawesome/free-regular-svg-icons";
 import SidebarBtn from "./SidebarBtn";
@@ -65,9 +64,6 @@ const Sidebar = () => {
           </SidebarBtn>
           <SidebarBtn name="Friends" link="/friends">
             <FontAwesomeIcon icon={faCircleUser} />
-          </SidebarBtn>
-          <SidebarBtn name="Files" link="/files">
-            <FontAwesomeIcon icon={faFile} />
           </SidebarBtn>
           <SidebarBtn name="Plans" link="/plans">
             <FontAwesomeIcon icon={faCreditCard} />

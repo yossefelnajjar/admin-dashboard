@@ -18,9 +18,10 @@ Admin Dashboard Using React.js, Tailwind
 - CSS3
 - JavaScript
 - React.js
+- React Router
 - Tailwind css
 - Sass
-- React Router
+- Font Awesome
 
 ### Features
 

@@ -22,7 +22,6 @@ import {
   faSpinner,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import Row from "../components/dashboard/LatestUploads";
 import TopSearched from "../components/dashboard/TopSearched";
 import LatestNews from "../components/dashboard/LatestNews";
 import Tasks from "../components/dashboard/Tasks";
@@ -30,6 +29,7 @@ import Tickets from "../components/dashboard/Tickets";
 import Reminders from "../components/dashboard/Reminders";
 import Table from "../components/dashboard/Table";
 import ProgressBar from "../components/ProgressBar";
+import LatestUploads from "../components/dashboard/LatestUploads";
 
 const Dashboard = () => {
   return (
@@ -243,10 +243,30 @@ const Dashboard = () => {
       <div className="rounded-lg p-4  bg-slate-800 col-span-2 lg:col-span-1">
         <Heading h2="Latest Uploads" />
         <div className="md:flex md:justify-between md:items-center md:flex-wrap sm:block">
-          <Row src={zip} btn="8.9MB" head="my-Zip-file" details="Ahmed" />
-          <Row src={avi} btn="1.2GB" head="my-Video-file" details="Admin" />
-          <Row src={psd} btn="74MB" head="my-Psd-file" details="Mohammed" />
-          <Row src={eps} btn="2.9MB" head="my-Eps-file" details="Designer" />
+          <LatestUploads
+            src={zip}
+            btn="8.9MB"
+            head="my-Zip-file"
+            details="Ahmed"
+          />
+          <LatestUploads
+            src={avi}
+            btn="1.2GB"
+            head="my-Video-file"
+            details="Admin"
+          />
+          <LatestUploads
+            src={psd}
+            btn="74MB"
+            head="my-Psd-file"
+            details="Mohammed"
+          />
+          <LatestUploads
+            src={eps}
+            btn="2.9MB"
+            head="my-Eps-file"
+            details="Designer"
+          />
         </div>
       </div>
 

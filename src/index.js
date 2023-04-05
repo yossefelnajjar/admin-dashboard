@@ -10,7 +10,6 @@ import Profile from "./pages/Profile";
 import Projects from "./pages/Projects";
 import Courses from "./pages/Courses";
 import Friends from "./pages/Friends";
-import Files from "./pages/Files";
 import Plans from "./pages/Plans";
 import NotFound from "./pages/NotFound";
 
@@ -29,7 +28,6 @@ root.render(
         <Route path="/projects" element={<Projects />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/friends" element={<Friends />} />
-        <Route path="/files" element={<Files />} />
         <Route path="/plans" element={<Plans />} />
       </Routes>
     </BrowserRouter>
